@@ -104,6 +104,8 @@ class BTC extends Subscription {
     if (bb < usdt * 0.95) {
       return 'buy';
     }
+
+    return 'normal';
   }
 
   getAmount(usdt, bb) {

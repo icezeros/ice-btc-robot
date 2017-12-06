@@ -1,0 +1,11 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "array-bracket-spacing": "off",
+    "no-new-func": "off",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 4 }],
+    "no-bitwise": 0,
+    "valid-jsdoc": 0,
+    "no-array-constructor": 0
+  }
+}

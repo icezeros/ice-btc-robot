@@ -1,0 +1,10 @@
+{
+  "name": "ice-btc-robot", // 应用名称
+  "script": "./index.js", // 实际启动脚本
+  "cwd": "./", // 当前工作路径
+  "error_file": "./logs/ice-btc-robot-err.log", // 错误日志路径
+  "out_file": "./logs/ice-btc-robot-out.log", // 普通日志路径
+  "env": {
+    "EGG_SERVER_ENV": "develop" // 环境参数，当前指定为生产环境
+  }
+}

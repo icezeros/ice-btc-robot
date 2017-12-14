@@ -3,7 +3,7 @@ const Subscription = require('egg').Subscription;
 const gate = require('../extend/gateio');
 const _ = require('lodash');
 const moment = require('moment');
-
+moment().locale('cn');
 class BTC extends Subscription {
   // 通过 schedule 属性来设置定时任务的执行间隔等配置
   static get schedule() {

@@ -2,6 +2,7 @@
 const Subscription = require('egg').Subscription;
 const gate = require('../extend/gateio');
 const _ = require('lodash');
+const moment = require('moment');
 
 class BTC extends Subscription {
   // 通过 schedule 属性来设置定时任务的执行间隔等配置
@@ -54,6 +55,7 @@ class BTC extends Subscription {
     const decision = this.decision(usdt, bb);
     const amount = this.getAmount(usdt, bb);
     const price = this.getPrice();
+    console.log(moment().format('LLLL'));
     console.log('usdt, bb', usdt, bb);
 
     // console.log('decision', decision);
